@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+ 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+		<div class="navbar-header">
+    		<a href="index.html" class="navbar-brand">UWorth</a>
+    		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+       			<span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+   			 </button>
+  		</div>
+  
+  <!-- 選單 -->
+ 	<div id="mynav" class="navbar-collapse collapse">
+    	<ul class=" nav nav-tabs navbar-right">
+
+    	<li class="nav-item">
+      		<a class="nav-link active" href="index.html"><!-- 選單項目 1 -->
+      			<span class="glyphicon glyphicon-home"></span> Home</a></li>
+      	<li class="nav-item">
+      		<a class="nav-link" href="menu1.html"><!-- 選單項目 2 -->
+      			<span class="glyphicon glyphicon-globe"></span>Mental Health</a></li>
+      	<li class="nav-item">
+      		<a class="nav-link" href="menu2.html"><!-- 選單項目 3 -->
+      			<span class="glyphicon glyphicon-adjust"></span>Emotions</a></li>
+      	<li class="nav-item">
+      		<a class="nav-link" href="menu3.html"><!-- 選單項目 3 -->
+      			<span class="glyphicon glyphicon-heart"></span>Self-Love</a></li>
+      	<li class="nav-item">
+      		<a class="nav-link" href="menu4.html"><!-- 選單項目 3 -->
+      			<span class="glyphicon glyphicon-grain"></span>Quotes</a></li>
+      	<li class="nav-item">
+      		<a class="nav-link" href="menu5.html"><!-- 選單項目 3 -->
+      			<span class="glyphicon glyphicon-user"></span>Find Help?</a></li>
+    	</ul>
+ 	</div>
+ </nav>
+
+<!--yuhuuu slide-->
+<div id="slider">
+<div id="photoCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators 瀏覽控制 --> 
+  <ol class="carousel-indicators">
+    <li data-target="#photoCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#photoCarousel" data-slide-to="1"></li>
+    <li data-target="#photoCarousel" data-slide-to="2"></li>
+  </ol>
+  
+  <!-- 建立相片清單 -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img class="carousel-img d-block w-100" src="media/back1.jpg" style="width: 100%">
+    </div>
+    <div class="item">
+      <img class="carousel-img d-block w-100"  src="media/back2.jpg" style="width: 100%">
+    </div>
+    <div class="item">
+      <img class="carousel-img d-block w-100"  src="media/back3.jpg" style="width: 100%">
+    </div>
+  </div>
+  <!-- 上一張/下一張控制 --> 
+  <a class="left carousel-control" href="#photoCarousel" data-slide="prev">
+  <span class="glyphicon glyphicon-chevron-left"></span></a>
+  <a class="right carousel-control" href="#photoCarousel" data-slide="next">
+  <span class="glyphicon glyphicon-chevron-right"></span>
+</a>
+</div>
+</div>
+<!--login page--->
+  <div class="login-popup">
+  	 <div class="box">
+  	 	 <div class="img-area">
+  	 	 	<div class="img">
+  	 	 	</div>
+  	 	 	<h1></h1>
+  	 	 </div>
+  	 	 <div class="form">
+  	 	 	<div class="close">&times;</div>
+  	 	 	<h1>Log In</h1>
+  	 	 	<form>
+  	 	 		<div class="form-group">
+  	 	 			<input type="text" placeholder="Email" class="form-control">
+  	 	 		</div>
+  	 	 		<div class="form-group">
+  	 	 			<input type="password" placeholder="Password" class="form-control" id="my_password">
+  	 	 			<p id="caps-lock-warn">Caps Lock is on!</p>
+  	 	 		</div>
+  	 	 		<div class="form-group">
+  	 	 			<label><input type="checkbox">
+  	 	 				Remember Me
+  	 	 			</label>
+  	 	 		</div>
+  	 	 		<button type="button" class="btn">Log In</button>
+  	 	 	</form>
+  	 	 </div>
+  	 </div>
+  </div>
+
+
+
+
+<!--Mental Health-->
+<section id="yourfeeling">
+	<div class="container">
+			<div class="col-md-6">
+				<h2>Mental Health</h2>
+				<div class="yourfeeling-content">
+					<h4>According to the World Health Organization (WHO):</h4>
+
+					“Mental health is a state of well-being in which an individual realizes his or her own abilities, can cope with the normal stresses of life, can work productively, and is able to make a contribution to his or her community.”
+
+				</div>
+					<a href="menu1.html">
+ 					<button type="button" class="btn btn-primary" >Read More...</button></a>
+ 			</div>
+
+			<div class="col-md-6">
+				<img src="media/mentalhealth1.jpg" class="logo" >
+			</div>
+	</div>
+</section>
+
+
+<!--Emotions-->
+<section id="supportothers">
+	<div class="container">
+			<div class="col-md-6">
+				<img src="media/emotion1.jpg">
+			</div>
+			<div class="col-md-6">
+				<div class="supportothers-content">
+					<h2>Know Your Emotions</h2>
+					<p>
+				What are you feeling, right now, as you start to read this? Are you curious? Hopeful that you'll learn something about yourself? Bored because this is something you have to do for school and you're not really into it — or happy because it's a school project you enjoy? Perhaps you're distracted by something else, like feeling excited about your weekend plans or sad because you just went through a breakup.</p><br>
+					<h3>
+						"The best and most beautiful things in the world cannot be seen or even touched. They must be felt with the heart"
+					</h3>
+					<h4>
+						― Helen Keller
+					</h4>
+				</div>
+					<a href="menu2.html">
+					<button type="button" class="btn btn-primary">Read More...</button></a>
+			</div>
+	</div>
+</section>
+
+<!--Self-Love -->
+<section id="supportyourself">
+	<div class="container">
+			<div class="col-md-6">
+				<h2>Self Love</h2>
+				<div class="Self-Love">
+					Self-love is a state of appreciation for oneself that grows from actions that support our physical, psychological, and spiritual growth. Self-love means having a high regard for your own well-being and happiness. Self-love means taking care of your own needs and not sacrificing your well-being to please others. Self-love means accepting yourself as you are in this very moment for everything that you are. It means accepting your emotions for what they are and putting your physical, emotional and mental well-being first.
+
+				</div>
+					<a href="menu3.html">
+					<button type="button" class="btn btn-primary">Read More...</button></a>
+			</div>
+
+			<div class="col-md-6">
+				<img src="media/self-love1.jpg">
+			</div>
+	</div>
+</section>
+
+<section id="quotes">
+	<div class="quotes-container">
+		<hr>
+		<h2>QUOTES FOR YOU</h2>
+		<div class="col-md-4">
+			<div class="content">
+				<img src="media/quotes1.jpg" >
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="content">
+				<img src="media/quotes2.jpg" >
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="content">
+				<img src="media/quotes3.jpg">
+			</div>
+		</div>
+			<a href="menu4.html">
+			<button type="button" class="btn btn-primary">Read More...</button></a>
+	</div>
+</section>
+<section id="help">
+	<div class="container">
+		<h1>FIND HELP</h1>
+		<div class="row help">
+			<div class="col-md-3 text-center">
+				<div class="icon">
+					<i class="fa fa-black-tie" aria-hidden="true"></i>
+				</div>
+				<h3>Psychotherapy or counseling</h3>
+				<p> talking about your problems with a mental health professional.</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<div class="icon">
+					<i class="fa fa-medkit" aria-hidden="true"></i>
+				</div>
+				<h3>Prescription medicine</h3>
+				<p> Medicines for mental disorders make changes to brain chemicals that are involved in emotions and thought patterns.</p>
+			</div>
+			<div class="col-md-3 text-center">
+				<div class="icon">
+					<i class="fa fa-users" aria-hidden="true"></i>
+				</div>
+				<h3>Support groups</h3>
+				<p>Self-help and support groups can help you gain insight into your condition. </p>
+			</div>
+			<div class="col-md-3 text-center">
+				<div class="icon">
+					<i class="fa fa-gratipay" aria-hidden="true"></i>
+				</div>
+				<h3>Other therapies</h3>
+				<p>There are many types of therapies people use to help treat mental health problems. These can include physical activity, such as exercise or yoga.</p>
+			</div>
+		</div>
+			<a href="menu5.html">
+			<button type="button" class="btn btn-primary">Read More...</button></a>
+
+	</div>
+</section>
+
+<!-- <a href="#" class="scroll-btn">
+<i class="fa fa-arrow-up" aria-hidden="true"></i>
+</a> -->
+<button id="scroll-btn">
+	<i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+<script type="text/javascript">
+	//SCROLL UP
+	const btnScrollToTop=document.querySelector("#scroll-btn");
+
+	btnScrollToTop.addEventListener("click", function(){
+
+		window.scrollTo({
+			top:0, 
+			left:0, 
+			behavior:"smooth"
+		});
+	});
+
+
+//LOGIN PAGE
+
+  const loginPopup = document.querySelector(".login-popup");
+  const close = document.querySelector(".close");
+  const closebtn = document.querySelector(".btn");
+
+
+  window.addEventListener("load",function(){
+ 
+   showPopup();
+   // setTimeout(function(){
+   //   loginPopup.classList.add("show");
+   // },5000)
+
+  })
+
+  function showPopup(){
+        const timeLimit = 5 // seconds;
+        let i=0;
+        const timer = setInterval(function(){
+         i++;
+         if(i == timeLimit){
+          clearInterval(timer);
+          loginPopup.classList.add("show");
+         } 
+         console.log(i)
+        },1000);
+  }
+
+
+  close.addEventListener("click",function(){
+    loginPopup.classList.remove("show");
+  })
+ closebtn.addEventListener("click",function(){
+  	loginPopup.classList.remove("show");
+  })
+
+ //CAPSLOCK
+	var inputpass=document.getElementById("my_password");
+  	var textpass=document.getElementById("caps-lock-warn");
+  	inputpass.addEventListener("keyup", function(event){
+  			showevent(event)
+  	})
+  	function showevent(event){
+  		if (event.getModifierState("CapsLock")) {
+    		textpass.style.display = "block";
+  		} else {
+    		textpass.style.display = "none"
+  		}
+  	}
+
+
+</script>
+
+</body>
+</html>
