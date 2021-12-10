@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+<!--     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ -->      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <!-- 選單表頭區塊 -->
+  <div class="navbar-header">
+    <a href="index.html" class="navbar-brand">UWorth</a>
+    <!-- 按鈕 -->
+    <button type="button" class="navbar-toggle" 
+            data-toggle="collapse" data-target="#mynav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+  </div>
+  
+  <!-- 選單 -->
+  <div id="mynav" class="navbar-collapse collapse">
+    <ul class=" nav nav-tabs navbar-right">
+      
+     <li class="nav-item">
+          <a class="nav-link active" href="index.html"><!-- 選單項目 1 -->
+            <span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu1.html"><!-- 選單項目 2 -->
+            <span class="glyphicon glyphicon-globe"></span>Mental Health</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu2.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-adjust"></span>Emotions</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu3.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-heart"></span>Self-Love</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu4.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-grain"></span>Quotes</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu5.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-user"></span>Find Help?</a></li>
+  </div>
+</nav>
+<!---emotion up--->
+<section id="hover">
+  <nav class="menu">
+    <img class="menuimg" src="media/background.jpg" alt="">
+    <ul>
+      <li><a data-image="media/happy.jpg" href="#">Happy</a></li>
+      <li><a data-image="media/sad.jpg"href="#">Sad</a></li>
+      <li><a data-image="media/fear.jpg"href="#">Fear</a></li>
+      <li><a data-image="media/angry.jpg"href="#">Angry</a></li>
+      <li><a data-image="media/disgust.jpg"href="#">Disgust</a></li>
+    </ul>
+  </nav>
+</section>
+
+
+
+
+<!--yuhuuu slide-->
+<section class="mentalhealth">
+  <div class="container">
+    <section class="border">
+      <h1>Emotions</h1>
+    </section> 
+    <hr>
+    <div class="paragraph1">
+    <h3>Know Your Emotions</h3>
+    <img src="media/emotions1.jpg">
+    <p>
+      What are you feeling, right now, as you start to read this? Are you curious? Hopeful that you'll learn something about yourself? Bored because this is something you have to do for school and you're not really into it — or happy because it's a school project you enjoy? Perhaps you're distracted by something else, like feeling excited about your weekend plans or sad because you just went through a breakup.
+    </p>
+    <img src="media/emotions2.jpg">
+    <p>
+      Emotions like these are part of human nature. They give us information about what we're experiencing and help us know how to react. As we grow up, we become more skilled in understanding emotions. We can identify what we feel and put it into words. With time and practice, we get better at knowing what we are feeling and why. This skill is called emotional awareness.
+    </p>
+    <img src="media/emotions3.jpg">
+    <p>
+      Emotional awareness helps us know what we need and want (or don't want!). It helps us build better relationships. That's because being aware of our emotions can help us talk about feelings more clearly, avoid or resolve conflicts better, and move past difficult feelings more easily.
+    </p>
+    <img src="media/emotions4.jpg">
+    <p>
+      Some emotions feel positive — like feeling happy, loving, confident, inspired, cheerful, interested, grateful, or included. Other emotions can seem more negative — like feeling angry, resentful, afraid, ashamed, guilty, sad, or worried. Both positive and negative emotions are normal.
+    </p>
+    <img src="media/emotions5.jpg">
+    <p>
+      All emotions tell us something about ourselves and our situation. But sometimes we find it hard to accept what we feel. We might judge ourselves for feeling a certain way, like if we feel jealous, for example. But instead of thinking we shouldn't feel that way, it's better to notice how we actually feel. Emotional awareness simply means recognizing, respecting, and accepting your feelings as they happen. There are no good or bad emotions. 
+    </p>
+    <br>
+    </div>
+
+      
+  </div>
+</section>
+<button id="scroll-btn">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+<script>
+  //SCROLL UP
+  const btnScrollToTop=document.querySelector("#scroll-btn");
+
+  btnScrollToTop.addEventListener("click", function(){
+
+    window.scrollTo({
+      top:0, 
+      left:0, 
+      behavior:"smooth"
+    });
+  });
+</script>
+
+<script>
+  $(function(){
+      var image=$(".menu").find('.menuimg').attr('src');
+      // console.log(image);
+      $(".menu ul li a").mouseover(function(){
+      var currentImage = $(this).attr('data-image');
+      // console.log(currentImage);
+        $(this).parent().parent().parent().find('.menuimg').attr("src",currentImage);
+        $("#hover .menu img").css("opacity","1");
+      });
+       $(".menu ul li a").mouseout(function(){
+          $("#hover .menu img").css("opacity","0.5");
+       });
+  });
+  
+</script>
+
+</body>
+</html>

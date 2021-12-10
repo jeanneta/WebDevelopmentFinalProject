@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <!-- 選單表頭區塊 -->
+  <div class="navbar-header">
+    <a href="index.html" class="navbar-brand">UWorth</a>
+    <!-- 按鈕 -->
+    <button type="button" class="navbar-toggle" 
+            data-toggle="collapse" data-target="#mynav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+  </div>
+  
+  <!-- 選單 -->
+  <div id="mynav" class="navbar-collapse collapse">
+    <ul class=" nav nav-tabs navbar-right">
+      
+    <li class="nav-item">
+          <a class="nav-link active" href="index.html"><!-- 選單項目 1 -->
+            <span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu1.html"><!-- 選單項目 2 -->
+            <span class="glyphicon glyphicon-globe"></span>Mental Health</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu2.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-adjust"></span>Emotions</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu3.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-heart"></span>Self-Love</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu4.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-grain"></span>Quotes</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu5.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-user"></span>Find Help?</a></li>
+    </ul>
+  </div>
+</nav>
+<!--yuhuuu slide-->
+
+
+<div class="gallery-box" >
+  <div class="inner-gallery">
+    <h1>JUST FOR YOU</h1>
+    <div class="border"></div>
+    <div class="gallery">
+       <a href="media/2.jpg" class="image">
+        <img src="media/9.jpg" alt="">
+      </a>
+       <a href="media/2.jpg" class="image">
+        <img src="media/10.jpg" alt="">
+      </a>
+       <a href="media/2.jpg" class="image">
+        <img src="media/11.jpg" alt="">
+      </a>
+       <a href="media/2.jpg" class="image">
+        <img src="media/12.jpg" alt="">
+      </a>
+
+      <a href="media/2.jpg" class="image">
+        <img src="media/1.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/3.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/2.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/5.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/4.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/6.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/8.jpg" alt="">
+      </a>
+      <a href="media/2.jpg" class="image">
+        <img src="media/7.jpg" alt="">
+      </a>
+      
+    </div>
+  </div>
+</div>
+<button id="scroll-btn">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+<script>
+  //SCROLL UP
+  const btnScrollToTop=document.querySelector("#scroll-btn");
+
+  btnScrollToTop.addEventListener("click", function(){
+
+    window.scrollTo({
+      top:0, 
+      left:0, 
+      behavior:"smooth"
+    });
+  });
+</script>
+
+<script type="text/javascript">
+  $(".gallery").magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery:{
+      enabled: true
+    }
+  })
+
+</script>
+
+</body>
+</html>

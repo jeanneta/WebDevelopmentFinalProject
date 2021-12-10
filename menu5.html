@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <!-- 選單表頭區塊 -->
+  <div class="navbar-header">
+    <a href="index.html" class="navbar-brand">UWorth</a>
+    <!-- 按鈕 -->
+    <button type="button" class="navbar-toggle" 
+            data-toggle="collapse" data-target="#mynav">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+  </div>
+  
+  <!-- 選單 -->
+  <div id="mynav" class="navbar-collapse collapse">
+    <ul class=" nav nav-tabs navbar-right">
+      
+    	<li class="nav-item">
+          <a class="nav-link active" href="index.html"><!-- 選單項目 1 -->
+            <span class="glyphicon glyphicon-home"></span> Home</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu1.html"><!-- 選單項目 2 -->
+            <span class="glyphicon glyphicon-globe"></span>Mental Health</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu2.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-adjust"></span>Emotions</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu3.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-heart"></span>Self-Love</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu4.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-grain"></span>Quotes</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="menu5.html"><!-- 選單項目 3 -->
+            <span class="glyphicon glyphicon-user"></span>Find Help?</a></li>
+    </ul>
+  </div>
+</nav>
+<!--yuhuuu slide-->
+
+<div class="background5">
+  <div class="content5">
+    <h1>FIND HELP</h1>
+
+    <p class="paragraph">
+      &#8226; Psychotherapy or counseling. This also is called talk therapy. It involves talking about your problems with a mental health professional. Talk therapy is often done one-on-one. It can also be done in a group setting or with your family. Individual and group talk therapy is sometimes helpful. This type of therapy can be useful even for those who do not have a mental health condition and are simply going through challenging life situations (grief, divorce, etc.).
+    </p>
+    <img src="media/findhelp2.jpg">
+
+    <p>
+       &#8226; Prescription medicine. Medicines for mental disorders make changes to brain chemicals that are involved in emotions and thought patterns. Medicines don’t cure psychiatric conditions or health problems. But they can improve your symptoms. They can make other treatments, such as counseling, more effective. 
+    </p>
+    <img src="media/findhelp3.jpg">
+
+    <p>
+       &#8226; Support groups. Self-help and support groups can help you gain insight into your condition. They can provide friendships, support, resources, and tips on how to live with your condition. They also help address the feelings of isolation that often go along with mental health conditions.
+    </p>
+    <img src="media/findhelp4.jpg">
+
+    <p>
+       &#8226; Other therapies.There are many types of therapies people use to help treat mental health problems. These can include physical activity, such as exercise or yoga. They can also include creative therapies. These are therapies done using means of expressing yourself creatively. They can include using art, music, movement, or writing.
+    </p>
+    <hr>
+  </div>
+</div>
+<button id="scroll-btn">
+  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+
+</button>
+<script>
+  //SCROLL UP
+  const btnScrollToTop=document.querySelector("#scroll-btn");
+
+  btnScrollToTop.addEventListener("click", function(){
+
+    window.scrollTo({
+      top:0, 
+      left:0, 
+      behavior:"smooth"
+    });
+  });
+</script>
+
+
+
+
+
+<!-- 
+<div id="findhelp">
+  <h1>FIND HELP?</h1>
+  <P>There are several types of treatment for mental health problems. They include:</P>
+  &#8226; Psychotherapy or counseling. This also is called talk therapy. It involves talking about your problems with a mental health professional. Talk therapy is often done one-on-one. It can also be done in a group setting or with your family. Individual and group talk therapy is sometimes helpful. This type of therapy can be useful even for those who do not have a mental health condition and are simply going through challenging life situations (grief, divorce, etc.).
+  <br><br>
+  &#8226; Prescription medicine. Medicines for mental disorders make changes to brain chemicals that are involved in emotions and thought patterns. Medicines don’t cure psychiatric conditions or health problems. But they can improve your symptoms. They can make other treatments, such as counseling, more effective. 
+  <br><br>
+  &#8226; Support groups. Self-help and support groups can help you gain insight into your condition. They can provide friendships, support, resources, and tips on how to live with your condition. They also help address the feelings of isolation that often go along with mental health conditions.
+  <br><br>
+  &#8226; Other therapies.There are many types of therapies people use to help treat mental health problems. These can include physical activity, such as exercise or yoga. They can also include creative therapies. These are therapies done using means of expressing yourself creatively. They can include using art, music, movement, or writing.
+
+</div>
+ -->
+
+
+<!-- <div id="content">
+ <table class="unstyledTable" style="height: 500px;" width="800" border="1">
+<thead>
+<tr>
+<th>head1</th>
+<th>head2</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td><span>Accept yourself</span></td>
+<td><span>We&rsquo;re all different, but the one thing we have in common is that none of us is perfect. Many different things, including our background, race, gender, religion and sexuality, make us who we are. Everyone has something to offer and everyone is entitled to respect, including you. Try not to be too hard on yourself.</span></td>
+</tr>
+<tr>
+<td><span>Get involved</span></td>
+<td><span>Meeting people and getting involved in new things can make all the difference for you and for others. Join a club, meet up with friends, do a course there are many things to do if you look around. Not only will you feel better, but you will benefit from supporting others too.</span></td>
+</tr>
+<tr>
+<td><span>Keep active and exercise</span></td>
+<td><span>Regular exercise can really help to give your mental health a boost. Find something you enjoy sport, swimming, walking, dancing or cycling and then just do it. It may be hard work, but it is worth the effort. Regular exercise can help you feel more positive.</span></td>
+</tr>
+<tr>
+<td><span>Eat healthy</span></td>
+<td><span>Having a balanced diet will not only help the way you feel, but it will also help the way you think. Try to eat regularly and aim to eat five portions of fruit and vegetables every day. Good food is essential for your mind and body to work properly.</span></td>
+</tr>
+<tr>
+<td><span>Keep in contact</span></td>
+<td><span>You don&rsquo;t have to be strong and struggle on alone. Friends are important, especially at difficult times, so it is good to keep up contact with them.</span></td>
+</tr>
+<tr>
+<td><span>Relax</span></td>
+<td><span>If too much busyness is getting you down, make time to relax. Fit things into your day that help you unwind, like listening to music, reading or watching films. Find something that you enjoy and that will work for you. Even 10 minutes of downtime during a busy day can make all the difference and help you manage stress better.</span></td>
+</tr>
+<tr>
+<td><span>Express yourself</span></td>
+<td><span>Our creativity often goes unnoticed, even by ourselves, much less given a regular outlet. Find a way to express your emotions and needs on a regular basis, such as journaling, blogging, painting, writing, or some other method.</span></td>
+</tr>
+<tr>
+<td><span>Talk about it</span></td>
+<td><span>Many of us can feel isolated and overwhelmed by problems sometimes. Talking about how you feel will help. Confide in someone you trust and if you feel there is nobody to talk to, call a suicide helpline or hotline in your community. Some people are comfortable just chatting with an online or real-life friend, but are embarrassed to start the conversation. You&rsquo;d be amazed at just how good you will feel if you can take that first step.</span></td>
+</tr>
+<tr>
+<td><span>Ask for help</span></td>
+<td><span>If you were feeling physically sick you would see a doctor, so don&rsquo;t be embarrassed about getting help for your mental health. Everyone needs help from time to time and there is nothing wrong with asking for it. In fact, asking for help is a sign of personal strength.</span></td>
+</tr>
+<tr>
+<td><span>Talk to a professional</span></td>
+<td><span>&nbsp;Many people run away from the idea of talking to a professional about their problems. They believe that it is a sign of weakness or admitting their own failure in life. Yet it takes enormous inner strength and willpower to acknowledge that most of us are not experts in every area in human living, and to seek out additional assistance. Don&rsquo;t hesitate to talk to a professional if you feel like your life has reached a dead-end and you&rsquo;ve tried other self-help methods and tips.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+ -->
+</body>
+</html>
